@@ -1,14 +1,12 @@
 import time
 import threading
 import os
-import math
 from webscraper.textscraper import call_available_text
 
 cmd = ""
 time_limit = 60
 user_input = " "
 true_list = []
-wordcount_list = []
 #============================================================================================================================================#
 
 
@@ -21,7 +19,7 @@ def wpm():
     wordcount = phrase.split(" ")
     minutefulltime =  60/time_taken
     wpm = len(wordcount) * minutefulltime
-    print(f"Your words per minute is: {math.floor(wpm)}")
+    print(f"Your words per minute is: {int(wpm)}")
 
     
 def typing():
